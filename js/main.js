@@ -88,8 +88,8 @@ async function sendDM(btn) {
   const message = document.getElementById('dm-m').value.trim();
   const status  = document.getElementById('dm-status');
 
-  if (!name || !email) { toast('⚠️ Name aur email zaroori hai!'); return; }
-  if (!message)        { toast('⚠️ Message likhna zaroori hai!'); return; }
+  if (!name || !email) { toast('⚠️ Name and email are required!'); return; }
+  if (!message)        { toast('⚠️ Please Enter Your Message!'); return; }
 
   btn.textContent = '⏳ Sending...';
   btn.disabled = true;
@@ -103,7 +103,7 @@ async function sendDM(btn) {
       status.style.display = 'block';
       status.style.color = '#f59e0b';
       status.innerHTML = '⚠️ EmailJS setup pending — <a href="#setup-guide" style="color:var(--cyan)">Setup karo</a>';
-      toast('⚠️ EmailJS IDs abhi set karni hain — guide dekho!');
+      toast('⚠️ EmailJS IDs set is required now — See Guide!');
     }, 800);
     return;
   }
@@ -125,13 +125,13 @@ async function sendDM(btn) {
     status.style.display = 'block';
     status.style.color = '#22c55e';
     status.innerHTML = `✅ Message sent! Ujjawal will reply soon.`;
-    toast(`🎉 ${name}, tera message Ujjawal ko mil gaya!`);
+    toast(`🎉 ${name}, Successfully Sent to Ujjawal`);
 
     // WhatsApp notification link — auto open karo
     const waMsg = encodeURIComponent(
       `📬 New Portfolio Message!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nSubject: ${subject || 'General'}\n\nMessage: ${message}`
     );
-    // Optional: uncomment karo agar WhatsApp bhi automatically open karna ho
+    // Optional: agar WhatsApp bhi automatically open karna ho
     // window.open(\`https://wa.me/917078712024?text=\${waMsg}\`, '_blank');
 
     // Clear form
@@ -146,8 +146,8 @@ async function sendDM(btn) {
     btn.disabled = false;
     status.style.display = 'block';
     status.style.color = '#ef4444';
-    status.innerHTML = '❌ Error! Direct email karo: ujjawalchoudharyy@gmail.com';
-    toast('❌ Send failed! Direct email karo.');
+    status.innerHTML = '❌ Error! Please Send Direct Mail: ujjawalchoudharyy@gmail.com';
+    toast('❌ Send failed! Please Send Direct Mail.');
   }
 }
 
