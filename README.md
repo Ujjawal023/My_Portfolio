@@ -59,8 +59,8 @@ I am a passionate Full Stack Developer focused on building modern UI, responsive
 
 ## 📬 Contact
 
-Email: yourmail@gmail.com  
-GitHub: https://github.com/yourusername  
+Email: ujjawalchoudharyy@gmail.com  
+GitHub: https://github.com/Ujjawal023  
 
 ---
 
