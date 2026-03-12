@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujjawal Verma — Full Stack & GenAI Developer</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-r"></div>
+<div class="toast" id="toast"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <span class="logo-name">Ujjawal</span>
+    <div class="logo-dot"></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme"></button>
+    <a href="#contact" class="nav-hire"><span>Hire Me</span></a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+  <div class="hgrid"></div>
+
+  <div class="hero-left">
+    <h1 class="h-name">
+      <span class="n1">UJJAWAL</span>
+      <span class="n2">VERMA</span>
+    </h1>
+    <div class="h-typing">
+      <span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+    </div>
+    <p class="h-bio">Full Stack Developer specializing in MERN Stack and Generative AI. 
+Skilled in building modern web applications, AI-powered tools, and scalable backend systems. 
+Passionate about clean code, performance, and developing software that solves real-world problems.</p>
+    <div class="h-btns">
+      <a href="#contact" class="btn-main">Let's Connect →</a>
+      <button class="btn-ghost" onclick="downloadResume()">
+        📄 Download Resume
+      </button>
+    </div>
+    <div class="h-stats">
+      <div class="hst"><div class="hst-n">2+</div><div class="hst-l">Yrs Coding</div></div>
+      <div class="hst"><div class="hst-n">5+</div><div class="hst-l">Projects</div></div>
+      <div class="hst"><div class="hst-n">1</div><div class="hst-l">IEEE Paper</div></div>
+      <div class="hst"><div class="hst-n">∞</div><div class="hst-l">Curiosity</div></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="av-wrap">
+      <div class="av-ring"></div>
+      <img src="assets/avatar.png" class="av-img" alt="Ujjawal Verma"/>
+      <div class="fc fc1">
+        <div class="fc-l">Status</div>
+        <div class="fc-v">🟢 Available</div>
+        <div class="fc-s">Full-time & Freelance</div>
+      </div>
+      <div class="fc fc2">
+        <div class="fc-l">Achievement</div>
+        <div class="fc-v">IEEE Co-Author</div>
+        <div class="fc-s">Research · TRVDS</div>
+      </div>
+      <div class="fc fc3">
+        <div class="fc-l">Stack</div>
+        <div class="fc-v">MERN + AI</div>
+        <div class="fc-s">Full Stack · GenAI</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind"><div class="sline"></div>Scroll to explore</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="max-w">
+    <div class="sec-label reveal">Expertise</div>
+    <h2 class="sec-title reveal">MY TECH <span>STACK</span></h2>
+    <p class="sec-sub reveal">Full-spectrum development — pixel-perfect UIs to intelligent AI-powered systems.</p>
+
+    <div class="skills-wrap">
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">🎨</span>
+        <div class="sk-cat">Frontend</div>
+        <div class="sk-name">UI Development</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">React.js</span><span class="sb-pct">90%</span></div><div class="sb-track"><div class="sb-fill" data-w="90"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">JavaScript ES6+</span><span class="sb-pct">88%</span></div><div class="sb-track"><div class="sb-fill" data-w="88"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Tailwind CSS</span><span class="sb-pct">85%</span></div><div class="sb-track"><div class="sb-fill" data-w="85"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">HTML5 / CSS3</span><span class="sb-pct">92%</span></div><div class="sb-track"><div class="sb-fill" data-w="92"></div></div></div>
+      </div>
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">⚙️</span>
+        <div class="sk-cat">Backend</div>
+        <div class="sk-name">Server & APIs</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Node.js</span><span class="sb-pct">82%</span></div><div class="sb-track"><div class="sb-fill" data-w="82"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Express.js</span><span class="sb-pct">80%</span></div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">RESTful APIs</span><span class="sb-pct">85%</span></div><div class="sb-track"><div class="sb-fill" data-w="85"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">MVC Architecture</span><span class="sb-pct">78%</span></div><div class="sb-track"><div class="sb-fill" data-w="78"></div></div></div>
+      </div>
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">🗄️</span>
+        <div class="sk-cat">Database</div>
+        <div class="sk-name">Data Layer</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">MongoDB</span><span class="sb-pct">83%</span></div><div class="sb-track"><div class="sb-fill" data-w="83"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">MySQL</span><span class="sb-pct">78%</span></div><div class="sb-track"><div class="sb-fill" data-w="78"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">NoSQL Design</span><span class="sb-pct">80%</span></div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div></div>
+      </div>
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">🤖</span>
+        <div class="sk-cat">AI / ML</div>
+        <div class="sk-name">Intelligent Systems</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Machine Learning</span><span class="sb-pct">75%</span></div><div class="sb-track"><div class="sb-fill" data-w="75"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Deep Learning</span><span class="sb-pct">70%</span></div><div class="sb-track"><div class="sb-fill" data-w="70"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">GenAI Integration</span><span class="sb-pct">78%</span></div><div class="sb-track"><div class="sb-fill" data-w="78"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Python</span><span class="sb-pct">80%</span></div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div></div>
+      </div>
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">🐍</span>
+        <div class="sk-cat">Languages</div>
+        <div class="sk-name">Programming</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">JavaScript</span><span class="sb-pct">88%</span></div><div class="sb-track"><div class="sb-fill" data-w="88"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Python</span><span class="sb-pct">80%</span></div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">HTML5 / CSS3</span><span class="sb-pct">92%</span></div><div class="sb-track"><div class="sb-fill" data-w="92"></div></div></div>
+      </div>
+
+      <div class="sk-card reveal">
+        <span class="sk-icon">🚀</span>
+        <div class="sk-cat">DevOps & Tools</div>
+        <div class="sk-name">Dev Workflow</div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Git / GitHub</span><span class="sb-pct">87%</span></div><div class="sb-track"><div class="sb-fill" data-w="87"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Agile / Scrum</span><span class="sb-pct">82%</span></div><div class="sb-track"><div class="sb-fill" data-w="82"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">Figma</span><span class="sb-pct">72%</span></div><div class="sb-track"><div class="sb-fill" data-w="72"></div></div></div>
+        <div class="skill-bar-wrap"><div class="sb-label"><span class="sb-name">CI/CD</span><span class="sb-pct">70%</span></div><div class="sb-track"><div class="sb-fill" data-w="70"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="max-w">
+    <div class="sec-label reveal">Portfolio</div>
+    <h2 class="sec-title reveal">FEATURED <span>PROJECTS</span></h2>
+    <p class="sec-sub reveal">Real-world applications built with modern tech stacks and a problem-solving mindset.</p>
+    <div class="proj-grid">
+      <div class="proj-card reveal left">
+        <div class="proj-no">01</div>
+        <span class="proj-badge sp">🏆 IEEE Co-Author</span>
+        <h3 class="proj-title">TRAFFIC RULES VIOLATION DETECTION SYSTEM</h3>
+        <p class="proj-desc">Web-based traffic violation management system with separate user & agent workflows. Image/video-based violation reporting, agent verification, and automated challan generation with centralized DB schema.</p>
+        <div class="proj-tech">
+          <span class="tt">Python</span><span class="tt">Django</span><span class="tt">Deep Learning</span>
+          <span class="tt">Machine Learning</span><span class="tt">React</span><span class="tt">MySQL</span>
+        </div>
+        <a href="https://github.com/Ujjawal023/TRVDS-Final-Year-Project" class="proj-link" target="_blank" rel="noopener noreferrer">💻 GitHub →</a>
+      </div>
+      <div class="proj-card reveal right">
+        <div class="proj-no">02</div>
+        <span class="proj-badge">🎙️ AI Voice Project</span>
+        <h3 class="proj-title">AI VOICE ASSISTANT — AERIS</h3>
+        <p class="proj-desc">Real-time AI-powered voice assistant using Web Speech API for voice recognition & text-to-speech. Fully responsive cross-platform interface with dynamic command processing and multi-intent handling.</p>
+        <div class="proj-tech">
+          <span class="tt">JavaScript ES6+</span><span class="tt">Web Speech API</span>
+          <span class="tt">HTML5</span><span class="tt">CSS3</span>
+        </div>
+        <a href="https://github.com/Ujjawal023" class="proj-link" target="_blank" rel="noopener noreferrer">💻 GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience">
+  <div class="max-w">
+    <div class="sec-label reveal">Background</div>
+    <h2 class="sec-title reveal">EXPERIENCE & <span>EDUCATION</span></h2>
+    <div class="exp-grid">
+      <div class="exp-tl reveal left">
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-date">Apr 2025 — Oct 2025</div>
+          <div class="exp-role">Full Stack Intern</div>
+          <div class="exp-co">Brandvio Pvt. Ltd. · Noida, UP</div>
+          <ul class="exp-pts">
+            <li>Built responsive pages using React.js, HTML5, CSS3 with mobile-first design</li>
+            <li>Integrated RESTful APIs for dynamic data rendering</li>
+            <li>Agile sprint-based workflow using Git/GitHub</li>
+            <li>Reusable React components — reduced code duplication</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot" style="background:var(--pink);box-shadow:0 0 14px rgba(236,72,153,0.7);border-color:var(--bg2)"></div>
+          <div class="exp-date">Aug 2023 — Present</div>
+          <div class="exp-role">B.Tech CSE — Final Year</div>
+          <div class="exp-co">RKGIT, AKTU · Ghaziabad, India</div>
+          <ul class="exp-pts">
+            <li>Computer Science & Engineering with AI/ML track</li>
+            <li>IEEE Research Paper co-author on TRVDS</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot" style="background:var(--cyan);box-shadow:0 0 14px rgba(6,182,212,0.6);border-color:var(--bg2)"></div>
+          <div class="exp-date">2019 — 2022</div>
+          <div class="exp-role">Diploma — Civil Engineering</div>
+          <div class="exp-co">S.D Group of Engg & Tech (BTEUP) · Muzaffarnagar</div>
+          <ul class="exp-pts"><li>Self-driven transition from Civil → Computer Science 💪</li></ul>
+        </div>
+      </div>
+      <div class="reveal right">
+        <div class="certs-title">// Certifications & Achievements</div>
+        <div class="cert-item">
+          <div class="cert-ico">📰</div>
+          <div class="cert-info"><h4>IEEE Research Paper</h4><p>Co-author · TRVDS · Deep Learning</p></div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-ico">🎓</div>
+          <div class="cert-info"><h4>Delta Full Stack Web Dev</h4><p>Apna College · MERN Stack</p></div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-ico">🏛️</div>
+          <div class="cert-info"><h4>HTML, CSS & JavaScript</h4><p>Johns Hopkins University · Coursera</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="max-w">
+    <div class="sec-label reveal">Get In Touch</div>
+    <h2 class="sec-title reveal">LET'S <span>CONNECT</span></h2>
+    <p class="sec-sub reveal">Open to full-time roles, freelance, collaborations & consulting.</p>
+    <div class="contact-wrap">
+      <div class="contact-left reveal left">
+        <p style="font-size:14px;color:var(--muted2);line-height:1.85">Whether you have a project, job opportunity, or just want to talk tech — I'm always up for a good conversation. Let's build something great together.</p>
+        <div class="c-links">
+          <a href="mailto:ujjawalchoudharyy@gmail.com" class="c-link">
+            <div class="c-link-l"><span class="cli">📧</span><div><div class="cll">Email</div><div class="clv">ujjawalchoudharyy@gmail.com</div></div></div>
+            <span class="cl-arr">→</span>
+          </a>
+          <a href="https://wa.me/917078712024" target="_blank" class="c-link">
+            <div class="c-link-l"><span class="cli">📱</span><div><div class="cll">WhatsApp / Phone</div><div class="clv">+91 7078712024</div></div></div>
+            <span class="cl-arr">→</span>
+          </a>
+          <a href="https://github.com/Ujjawal023" target="_blank" class="c-link">
+            <div class="c-link-l"><span class="cli">💻</span><div><div class="cll">GitHub</div><div class="clv">Ujjawal023</div></div></div>
+            <span class="cl-arr">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/choudhary-ujjawal-verma-9b649828a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="c-link">
+            <div class="c-link-l"><span class="cli">🔗</span><div><div class="cll">LinkedIn</div><div class="clv">Ujjawal Verma</div></div></div>
+            <span class="cl-arr">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="dm-form reveal right">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--purple2);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:24px">// Send Direct Message</div>
+        <input id="dm-n" class="dm-input" placeholder="Your name *">
+        <input id="dm-e" type="email" class="dm-input" placeholder="Email address *">
+        <input id="dm-p" class="dm-input" placeholder="Phone / WhatsApp (optional)">
+        <input id="dm-s" class="dm-input" placeholder="Subject / Purpose">
+        <textarea id="dm-m" class="dm-input" style="height:110px;resize:none" placeholder="Your message..."></textarea>
+        <button class="dm-btn" id="dm-submit" onclick="sendDM(this)">🚀 SEND MESSAGE</button>
+        <div id="dm-status" style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;display:none"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="f-logo">Ujjawal<span> Verma</span></div>
+  <div class="f-copy">© 2026 Ujjawal Verma · Built with 💻 + ☕</div>
+  <div class="f-links">
+    <a href="https://github.com/Ujjawal023" target="_blank">GitHub</a>
+    <a href="mailto:ujjawalchoudharyy@gmail.com">Email</a>
+    <a href="https://wa.me/917078712024" target="_blank">WhatsApp</a>
+  </div>
+</footer>
+
+<!-- ═══ FLOATING CHATBOT ═══ -->
+<div class="fab">
+  <button class="fab-btn" onclick="toggleChat()" id="fab-btn">
+    <div class="fab-notif" id="fab-notif">1</div>
+    <span class="fab-ico" id="fab-ico">💬</span>
+    <span class="fab-x" id="fab-x">✕</span>
+  </button>
+</div>
+
+<!-- CHAT WINDOW -->
+<div class="chat-win" id="chatWin">
+  <div class="cw-head">
+    <div class="cw-head-l">
+      <div class="cw-av">UV</div>
+      <div class="cw-hi">
+        <h4>Chat with Ujjawal's AI</h4>
+        <p>● Online · Hindi & English</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:4px">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-hi" onclick="setLang('hi')">HI</button>
+      <button class="voice-btn" id="voice-btn" onclick="toggleVoice()" title="Voice input">🎤</button>
+    </div>
+  </div>
+  <div class="cw-chips">
+    <button class="chip" onclick="qask('about')">👤 About</button>
+    <button class="chip" onclick="qask('skills')">🛠 Skills</button>
+    <button class="chip" onclick="qask('projects')">🚀 Projects</button>
+    <button class="chip" onclick="qask('hire')">💼 Hire</button>
+    <button class="chip" onclick="qask('contact')">📞 Contact</button>
+    <button class="chip" onclick="qask('experience')">📅 Exp</button>
+    <button class="chip" onclick="qask('resume')">📄 Resume</button>
+  </div>
+  <div class="cw-msgs" id="cwMsgs">
+    <div class="cwm bot">
+      <div class="cwm-a">UV</div>
+      <div class="cwm-b">Hey! 👋 I'm Ujjawal's AI assistant.<br>Ask in <strong>Hindi ya English</strong> — dono samajhta hoon! 🚀</div>
+    </div>
+  </div>
+  <div class="cw-inp">
+    <input id="cwIn" placeholder="Kuch bhi poochho / Ask anything..." onkeydown="if(event.key==='Enter') cwSend()">
+    <button class="cw-send" onclick="cwSend()">➤</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
